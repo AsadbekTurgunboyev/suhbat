@@ -2,6 +2,7 @@ package com.example.suhbat;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +27,7 @@ public class BaseActivity extends AppCompatActivity {
         preferenceManager = new UserPreferenceManager(this);
         reference = FirebaseDatabase.getInstance().getReference("users").child(preferenceManager.getKey());
 
+       // salom
     }
 
 
